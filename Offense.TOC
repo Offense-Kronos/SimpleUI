@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: Offense UI
+## Notes: SimpleUI
+## Author: Offense
+
+Offense.LUA
+
