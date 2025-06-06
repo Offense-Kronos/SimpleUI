@@ -12,19 +12,10 @@ ChatFrameEditBox:SetPoint("BOTTOMRIGHT", "ChatFrame1", "TOPRIGHT", 0, 2)
 ---- Hide Hotkey and Macro Names
 ------------------------------------------------
 
-for i=1,12 do getglobal("ActionButton"..i.."HotKey"):Hide() getglobal("BonusActionButton"..i.."HotKey"):Hide() end
 for i=1,12 do getglobal("ActionButton"..i.."Name"):Hide() getglobal("BonusActionButton"..i.."Name"):Hide() end
-
-for i=1,12 do getglobal("MultiBarRightButton"..i.."HotKey"):Hide() getglobal("MultiBarRightButton"..i.."HotKey"):Hide() end
 for i=1,12 do getglobal("MultiBarRightButton"..i.."Name"):Hide() getglobal("MultiBarRightButton"..i.."Name"):Hide() end
-
-for i=1,12 do getglobal("MultiBarLeftButton"..i.."HotKey"):Hide() getglobal("MultiBarLeftButton"..i.."HotKey"):Hide() end
 for i=1,12 do getglobal("MultiBarLeftButton"..i.."Name"):Hide() getglobal("MultiBarLeftButton"..i.."Name"):Hide() end
-
-for i=1,12 do getglobal("MultiBarBottomRightButton"..i.."HotKey"):Hide() getglobal("MultiBarBottomRightButton"..i.."HotKey"):Hide() end
 for i=1,12 do getglobal("MultiBarBottomRightButton"..i.."Name"):Hide() getglobal("MultiBarBottomRightButton"..i.."Name"):Hide() end
-
-for i=1,12 do getglobal("MultiBarBottomLeftButton"..i.."HotKey"):Hide() getglobal("MultiBarBottomLeftButton"..i.."HotKey"):Hide() end
 for i=1,12 do getglobal("MultiBarBottomLeftButton"..i.."Name"):Hide() getglobal("MultiBarBottomLeftButton"..i.."Name"):Hide() end
 
 ------------------------------------------------
@@ -35,7 +26,7 @@ MinimapZoomIn:Hide()
 MinimapZoomOut:Hide()
 GameTimeFrame:Hide()
 Minimap:SetZoom(0)
-SetCVar("cameraDistanceMax",30)
+SetCVar("cameraDistanceMax",50)
 CameraZoomOut(50)
 
 ------------------------------------------------
@@ -43,22 +34,22 @@ CameraZoomOut(50)
 ------------------------------------------------
 
 PlayerFrame:ClearAllPoints()
-PlayerFrame:SetPoint("BOTTOM",UIParent,"BOTTOM", 320,160)
+PlayerFrame:SetPoint("BOTTOM",UIParent,"BOTTOM", -235,200)
 PlayerFrame.SetPoint=function()end
 
 TargetFrame:ClearAllPoints()
-TargetFrame:SetPoint("BOTTOM",UIParent,"BOTTOM", 420,60)
+TargetFrame:SetPoint("BOTTOM",UIParent,"BOTTOM", 235,200)
 TargetFrame.SetPoint=function()end
 
-PlayerFrame.name:SetFont("Fonts\\ARIALN.ttf", 13, "THINOUTLINE")
+PlayerFrame.name:SetFont("Fonts\\ARIALN.ttf",13,"OUTLINE")
 PlayerFrameHealthBarText:SetFont("Fonts\\FRIZQT__.ttf",10,"OUTLINE")
 PlayerFrameManaBarText:SetFont("Fonts\\FRIZQT__.ttf",10,"OUTLINE")
 
-PetFrame.name:SetFont("Fonts\\ARIALN.ttf", 13, "THINOUTLINE")
+PetFrame.name:SetFont("Fonts\\ARIALN.ttf", 13, "OUTLINE")
 PetFrameHealthBarText:SetFont("Fonts\\FRIZQT__.ttf",10,"OUTLINE")
 PetFrameManaBarText:SetFont("Fonts\\FRIZQT__.ttf",10,"OUTLINE")
 
-TargetFrame.name:SetFont("Fonts\\ARIALN.ttf", 13)
+TargetFrame.name:SetFont("Fonts\\ARIALN.ttf", 13, "OUTLINE")
 
 ------------------------------------------------
 ---- Move Action Bars (Anchors to MainBar)
